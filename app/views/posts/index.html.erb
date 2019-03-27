@@ -1,0 +1,10 @@
+<% @posts.each do |post| %>
+
+<% puts @post.inspect %>
+<h3> <%= post.title %> </h3> 
+<div><%= truncate(post.body, :length =>35) %> </div>
+<%= link_to "Read Post", post %>
+<div> <br/> </div>
+
+
+<% end %>
